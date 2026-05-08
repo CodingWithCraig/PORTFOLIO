@@ -1,0 +1,99 @@
+.PortNav {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 5px 0;
+    background-color: rgba(80, 80, 80, 0.199);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.PortNav li {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+.PortNav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 410;
+}
+.PortNav a:hover {
+    color: #646cff;
+}
+@media (min-width: 451px) {
+    .PortNav2, .mobiBar {
+        display: none;
+    }
+    .mobileMenu {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .PortNav {
+        display: none;
+    }
+
+}
+
+.mobiBar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 5px 0;
+    background-color: rgba(80, 80, 80, 0.199);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.PortNav2 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 45px;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(80, 80, 80, 0.199);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px;
+    /* border-radius: 8px; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(182, 182, 182, 0.1);
+    animation: SlideDown 0.3s ease-in-out;
+}
+@keyframes SlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.PortNav2 li {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+.PortNav2 a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 410;
+}
+
