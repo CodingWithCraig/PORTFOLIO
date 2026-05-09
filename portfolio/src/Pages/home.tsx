@@ -39,6 +39,7 @@ export default function Home() {
 
       </div>
 
+        <a href="#about" className="aboutBtn" >About Me</a>
     </div>
   );
 }

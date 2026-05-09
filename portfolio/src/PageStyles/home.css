@@ -5,11 +5,23 @@
 }
 .welcomeContainer {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1.5rem;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     margin-top: 150px;
+    animation: SlideFadeIn 1s ease-in-out;
+}
+@keyframes SlideFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .welcomeC1 h2 {
     font-size: 2.5rem;
@@ -21,25 +33,29 @@
     margin-left: 7rem;
     color: #ffffff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.74);
+    margin-bottom: 0;
 }
 .welcomeC1 h3 {
-    font-size: 1.15rem;
-    margin-left: 13rem;
-    margin-top: -2rem;
-    opacity: 0.9;
+    font-size: 1rem;
+    margin-left: 10rem;
+    margin-top: -5rem;
+    opacity: 0.8;
     color: #ffffff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.74);
-    background-color: black;
+    background-color: transparent;
     display: inline-block;
     padding: 2px 10px;
     border-radius: 10px;
+    font-style: italic;
 }
 .welcomeC2 {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 .contactC {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin-top: 3rem;
     justify-content: flex-start;
@@ -72,4 +88,84 @@
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 1rem;
+}
+
+@media (max-width: 450px) {
+    .welcomeContainer {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .welcomeC1 h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+    .welcomeC1 h3 {
+        font-size: 1rem;
+        margin-left: 0;
+        margin-top: 0rem;
+        background-color: transparent;
+    }
+    .Profile {
+        width: 150px;
+        align-self: center;
+        margin: 10px auto;
+    }
+    .contactC p a {
+        display: none;
+    }
+    .contactC {
+        align-items: center;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    .contactC p {
+        justify-content: center;
+    }
+}
+
+.aboutBtn {
+    margin-top: 0rem;
+    margin-left: 11.5rem;
+    color: white;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0.2em 1em;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background: linear-gradient(270deg, #0f0c29, #302b63, #24243e, #1a1a2e);
+    animation: aboutBtnFadeIn 1.5s ease-in-out;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes aboutBtnFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.aboutBtn:hover {
+    border-bottom: 1px solid #646cff;
+    color: white;
+    transform: scale(1.04);
+}
+@media (max-width: 450px) {
+    .aboutBtn {
+        display: inline-block;
+        align-self: center;
+        justify-self: center;
+        /* margin: 0.3rem auto;
+        margin-left: 1.2rem; */
+    }
 }

@@ -32,10 +32,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('./assets/mountains2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 46, 0.932);
   z-index: -1;
 }
 
