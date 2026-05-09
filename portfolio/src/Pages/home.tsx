@@ -6,6 +6,21 @@ import { IoIosMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io";
 import { FaGithub } from "react-icons/fa6";
+import { FaHtml5 } from "react-icons/fa"
+import { FaCss } from "react-icons/fa6";
+import { RiJavascriptFill } from "react-icons/ri";
+import { BiLogoTypescript } from "react-icons/bi";
+import { FaPython } from "react-icons/fa6";
+import { PiFileCpp } from "react-icons/pi";
+import { PiFileCSharpBold } from "react-icons/pi";
+import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
+import { DiMongodb } from "react-icons/di";
+import { SiFirebase } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+
+
 
 
 
@@ -40,6 +55,120 @@ export default function Home() {
       </div>
 
         <a href="#about" className="aboutBtn" >About Me</a>
+
+
+        <div className="skillsContainer" id="skills">
+
+            <h1 className="skillTitle"> MY SKILLS</h1>
+
+            <div className="skillC">
+            <h2>Programming Launguages</h2>
+
+            <ul className="pl-skills">
+
+                {/* <li className="skill-item">
+                    <div>
+                    <RiJavascriptFill size={45} color="white" />
+                    <p>JavaScript</p>
+                    </div>
+                </li> */}
+                <li className="skill-item">
+                    <div>
+                    <BiLogoTypescript size={45} color="white" />
+                    <p>TypeScript</p>
+                    </div>
+                </li>
+                <li className="skill-item">
+                    <div>
+                    <FaPython size={45} color="white" />
+                    <p>Python</p>
+                    </div>
+                </li>
+                <li className="skill-item">
+                    <div>
+                    <PiFileCpp size={45} color="white" />
+                    <p>C++</p>
+                    </div>
+                </li>
+                <li className="skill-item">
+                    <div>
+                    <PiFileCSharpBold size={45} color="white" />
+                    <p>C#</p>
+                    </div>
+                </li>
+                <li className="skill-item">
+                    <div>
+                    <FaHtml5 size={45} color="white" />
+                    <p>HTML</p>
+                    </div>
+                </li>
+                <li className="skill-item">
+                    <div>
+                    <FaCss size={45} color="white" />
+                    <p>CSS</p>
+                    </div>
+                </li>
+            </ul>
+
+            </div>
+
+
+            <div className="skillC">
+            <h2>Frameworks</h2>
+
+            <ul className="pl-skills">
+
+                <li className="skill-item">
+                    <div>
+                    <FaReact size={45} color="white" />
+                    <p>React</p>
+                    </div>
+                </li>
+                <li className="skill-item">
+                    <div>
+                    <RiNextjsFill size={45} color="white" />
+                    <p>Next.js</p>
+                    </div>
+                </li>
+                <li className="skill-item">
+                    <div>
+                    <FaNodeJs size={45} color="white" />
+                    <p>Node.js</p>
+                    </div>
+                </li>
+             </ul>
+
+            </div>
+            <div className="skillC">
+            <h2>Libraries & Database</h2>
+
+            <ul className="pl-skills">
+
+                <li className="skill-item">
+                    <div>
+                    <DiMongodb size={45} color="white" />
+                    <p>MongoDB</p>
+                    </div>
+                </li>
+                <li className="skill-item">
+                    <div>
+                    <SiFirebase size={45} color="white" />
+                    <p>Firebase</p>
+                    </div>
+                </li>
+                <li className="skill-item">
+                    <div>
+                    <SiMysql size={45} color="white" />
+                    <p>MySQL</p>
+                    </div>
+                </li>
+             </ul>
+
+            </div>
+
+
+
+        </div>
     </div>
   );
 }

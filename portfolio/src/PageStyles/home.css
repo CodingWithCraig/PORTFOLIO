@@ -82,7 +82,8 @@
 }
 .contactC p:hover {
     opacity: 1;
-    transform: scale(1.1);}
+    transform: scale(1.1);
+}
 .mail, .github, .phone, .linkedin {
     display: flex;
     align-items: center;
@@ -168,4 +169,95 @@
         /* margin: 0.3rem auto;
         margin-left: 1.2rem; */
     }
+
+
 }
+
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    /* background-color: #24243e; */
+    padding: 2rem 0;
+}
+
+.skillTitle {
+    font-size: 2.1em;
+    color: whitesmoke;
+    text-align: 1px 1px 1px black;
+    /* margin-bottom: 25px; */
+    margin-left: 125px;
+
+}
+.skillC {
+    display: inline-block;
+    background-color: #1a1a2e;
+    width: 80%;
+    border-radius: 25px;
+    padding: 1.3rem;
+    margin: 10px auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+}
+.skillC:hover {
+    box-shadow: 1px 1px 6px rgba(90, 90, 90, 0.521);
+}
+.skillC h2 {
+    font-size: 1.5rem;
+    color: #646cff;
+    margin-bottom: 1rem;
+}
+.pl-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+}
+.skill-item {
+  position: relative;
+}
+
+.skill-item p {
+  display: none;
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: #ffffff23; */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  z-index: 10;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.skill-item:hover p {
+  display: block;
+}
+
+.skill-item div {
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+.skill-item div:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@media (max-width: 450px) {
+    .skillTitle {
+        text-align: center;
+        margin-left: 0;
+    }
+    .skillC {
+        width: 90%;
+        padding: 1rem;
+    }
+}
+
