@@ -8,7 +8,6 @@ import { IoLogoLinkedin } from "react-icons/io";
 import { FaGithub } from "react-icons/fa6";
 import { FaHtml5 } from "react-icons/fa"
 import { FaCss } from "react-icons/fa6";
-import { RiJavascriptFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaPython } from "react-icons/fa6";
 import { PiFileCpp } from "react-icons/pi";
