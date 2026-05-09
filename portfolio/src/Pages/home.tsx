@@ -29,7 +29,7 @@ export default function Home() {
     <div>
       <NavBar />
 
-      <div className="welcomeContainer">
+      <div className="welcomeContainer" id="home">
         <div className="welcomeC1">
             <h2>HI THERE!</h2>
             <h1>I'm Craig</h1>
@@ -167,7 +167,31 @@ export default function Home() {
 
 
 
+        </div><hr />
+
+
+        <div className='aboutContainer' id="about">
+            <h2 className='aboutTitle'>ABOUT ME</h2>
+
+            <p>
+                My name is Craig Hlongwani, 
+                a results-driven Software Engineer with a 
+                strong foundation in both front-end and 
+                back-end development, passionate about 
+                building modern, scalable, and user-focused 
+                applications. Skilled in developing clean, 
+                efficient, and visually engaging digital 
+                solutions while solving complex technical 
+                challenges. Experienced with modern development 
+                technologies and frameworks, with a continuous 
+                drive to learn, adapt, and improve. Strong 
+                collaborator with excellent problem-solving 
+                abilities, committed to delivering high-quality
+                 software solutions that create real impact.
+            </p>
         </div>
+
+
     </div>
   );
 }
