@@ -338,13 +338,7 @@
     }
 }
 
-.projectTitle {
-    font-size: 2.1em;
-    color: whitesmoke;
-    text-shadow: 1px 1px 1px black;
-    text-align: center;
-    margin-top: 3rem;
-}
+
 
 /* Add fade-in animation for the home page content */
 @keyframes fadeIn {
@@ -368,5 +362,23 @@
 .main-content.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+.cvDownloadBtn {
+    display: inline-block;
+    margin-top: 1rem;
+    color: white;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0.2em 1em;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background: linear-gradient(270deg, #0f0c29, #302b63, #24243e, #1a1a2e);
+    animation: aboutBtnFadeIn 1.5s ease-in-out;
+    transition: transform 0.3s ease;
+    animation: gradientShift 5s ease infinite;
+    width: 170px;
 }
 

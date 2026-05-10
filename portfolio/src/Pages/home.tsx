@@ -22,6 +22,7 @@ import { MdDesignServices } from "react-icons/md";
 import { FaReadme } from "react-icons/fa";
 import { IoGameController } from "react-icons/io5";
 import { MdModeOfTravel } from "react-icons/md";
+import ProjectsSection from "../components/projects";
 
 
 
@@ -194,7 +195,9 @@ export default function Home() {
                 drive to learn, adapt, and improve. Strong 
                 collaborator with excellent problem-solving 
                 abilities, committed to delivering high-quality
-                 software solutions that create real impact.
+                 software solutions that create real impact. <br />
+           <a href="#" className="cvDownloadBtn">View CV</a>
+                 
             </p>
 
             <div className="softSkills">
@@ -208,6 +211,11 @@ export default function Home() {
                 <li>Time Management</li>
                 
             </ul>
+           
+
+
+
+
             </div>
             <div className="interests">
             <h2>Interests</h2>
@@ -223,10 +231,7 @@ export default function Home() {
         </div>
 
 
-        <div className="projectsContainer">
-            <h2 className="projectTitle">PROJECTS</h2>
-
-        </div>
+        <ProjectsSection />     
 
 
     </div>
