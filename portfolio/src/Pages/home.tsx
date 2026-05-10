@@ -18,6 +18,10 @@ import { FaNodeJs } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
 import { SiFirebase } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
+import { MdDesignServices } from "react-icons/md";
+import { FaReadme } from "react-icons/fa";
+import { IoGameController } from "react-icons/io5";
+import { MdModeOfTravel } from "react-icons/md";
 
 
 
@@ -192,6 +196,36 @@ export default function Home() {
                 abilities, committed to delivering high-quality
                  software solutions that create real impact.
             </p>
+
+            <div className="softSkills">
+            <h2>Soft Skills</h2>
+
+            <ul className="aboutList">
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+                <li>Communication</li>
+                <li>Adaptability</li>
+                <li>Time Management</li>
+                
+            </ul>
+            </div>
+            <div className="interests">
+            <h2>Interests</h2>
+
+            <ul className="aboutList">
+                <li> <MdDesignServices size={20} color="darkgray" /> Designing</li>
+                <li> <FaReadme size={20} color="darkgray" /> Reading</li>
+                <li> <IoGameController size={20} color="darkgray" /> Gaming</li>
+                <li> <MdModeOfTravel size={20} color="darkgray" /> Traveling</li>
+                
+            </ul>
+            </div>
+        </div>
+
+
+        <div className="projectsContainer">
+            <h2 className="projectTitle">PROJECTS</h2>
+
         </div>
 
 

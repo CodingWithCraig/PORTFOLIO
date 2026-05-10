@@ -2,6 +2,7 @@
     width: 230px;
     height: auto;
     border-radius: 50%;
+    border: #646cff solid 3px;
 }
 .welcomeContainer {
     display: flex;
@@ -136,6 +137,7 @@
     background: linear-gradient(270deg, #0f0c29, #302b63, #24243e, #1a1a2e);
     animation: aboutBtnFadeIn 1.5s ease-in-out;
     transition: transform 0.3s ease;
+    animation: gradientShift 5s ease infinite;
 }
 
 .aboutBtn:hover {
@@ -277,7 +279,7 @@
     justify-content: center;
     gap: 1rem;
     margin-top: 3rem;
-    width: 90%;
+    width: 92%;
     margin: 15px auto;
     background-color: #302b63;
     padding: 2rem;
@@ -293,5 +295,78 @@
     line-height: 1.6;
     color: #ffffff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.74);
+}
+
+.softSkills, .interests {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0rem;
+    list-style: none;
+    justify-content: center;
+}
+.softSkills h2, .interests h2 {
+    font-size: 1.5rem;
+    color: #646cff;
+    margin-bottom: 1rem;
+}
+.aboutList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.aboutList li {
+    background-color: #1a1a2e;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 450px) {
+    .aboutContainer {
+        padding: 1rem;
+    }
+    .aboutTitle {
+        text-align: center;
+        margin-left: 0;
+    }
+    .aboutContainer p {
+        font-size: 1rem;
+    }
+}
+
+.projectTitle {
+    font-size: 2.1em;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Add fade-in animation for the home page content */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the main content */
+.main-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.main-content.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 

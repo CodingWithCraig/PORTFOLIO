@@ -45,8 +45,6 @@ a:hover {
   color: #535bf2;
 }
 
-
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -77,5 +75,15 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Add smooth scroll behavior for the entire site */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add transition effect for buttons and links */
+button, a {
+  transition: all 0.3s ease;
 }
 
