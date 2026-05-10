@@ -49,13 +49,13 @@
     justify-content: flex-end;
     width: 100%;
     padding: 5px 0;
-    background-color: rgba(80, 80, 80, 0.199);
+    background-color: rgba(80, 80, 80, 0.3);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 .PortNav2 {
     list-style: none;
@@ -65,11 +65,10 @@
     top: 45px;
     left: 0;
     z-index: 1000;
-    background-color: rgba(80, 80, 80, 0.199);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(80, 80, 80, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     padding: 10px;
-    /* border-radius: 8px; */
     width: 100%;
     justify-content: center;
     align-items: center;

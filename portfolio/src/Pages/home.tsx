@@ -42,10 +42,10 @@ export default function Home() {
 
             <div className="contactC">
                 {/* <h2>Contact Me</h2> */}
-                <p className="mail"><IoIosMail size={25} color="white"  /> <a href="mailto:clkhlongwani2@gmail.com" target="_blank" rel="noopener noreferrer">clkhlongwani2@gmail.com</a></p>
-                <p className="phone"><FaPhone size={25} color="white" /> <a href="tel:+27658328829" target="_blank" rel="noopener noreferrer">+27658328829</a></p>
-                <p className="linkedin"><IoLogoLinkedin size={24} color="white" /> <a href="https://www.linkedin.com/in/craig-hlongwani-447920359" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-                <p className="github"><FaGithub size={22} color="white" /> <a href="https://github.com/CodingWithCraig" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                <p className="mail"><a href="mailto:clkhlongwani2@gmail.com" target="_blank" rel="noopener noreferrer"><IoIosMail size={25} color="white"  /> </a></p>
+                <p className="phone"><a href="tel:+27658328829" target="_blank" rel="noopener noreferrer"><FaPhone size={25} color="white" /> </a></p>
+                <p className="linkedin"> <a href="https://www.linkedin.com/in/craig-hlongwani-447920359" target="_blank" rel="noopener noreferrer"><IoLogoLinkedin size={24} color="white" /></a></p>
+                <p className="github"><a href="https://github.com/CodingWithCraig" target="_blank" rel="noopener noreferrer"><FaGithub size={22} color="white" /> </a></p>
 
             </div>
 
@@ -53,7 +53,10 @@ export default function Home() {
 
       </div>
 
-        <a href="#about" className="aboutBtn" >About Me</a>
+        
+        <div className="aboutBtnContainer">
+            <a href="#about" className="aboutBtn" >About Me</a>
+        </div>
 
 
         <div className="skillsContainer" id="skills">
