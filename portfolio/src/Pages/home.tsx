@@ -34,6 +34,7 @@ export default function Home() {
     <div>
       <NavBar />
 
+      <div id="home">
       <div className="welcomeContainer" id="home">
         <div className="welcomeC1">
             <h2>HI THERE!</h2>
@@ -57,14 +58,17 @@ export default function Home() {
         </div>
 
       </div>
+      </div>
+
+
 
         
         <div className="aboutBtnContainer">
             <a href="#about" className="aboutBtn" >About Me</a>
         </div>
 
-
-        <div className="skillsContainer" id="skills">
+      <div id="skills">
+        <div className="skillsContainer">
 
             <h1 className="skillTitle"> MY SKILLS</h1>
 
@@ -175,10 +179,17 @@ export default function Home() {
 
 
 
-        </div><hr />
+        </div>        
+        
+      </div>
+
+<hr />
 
 
-        <div className='aboutContainer' id="about">
+ 
+
+        <div id="about">
+        <div className='aboutContainer'>
             <h2 className='aboutTitle'>ABOUT ME</h2>
 
             <p>
@@ -228,10 +239,18 @@ export default function Home() {
                 
             </ul>
             </div>
+        </div>            
+
         </div>
 
 
+
+
+        <div id="projects">
         <ProjectsSection />     
+        </div>
+
+
 
 
     </div>
