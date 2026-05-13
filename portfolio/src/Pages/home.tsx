@@ -38,19 +38,25 @@ export default function Home() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const serviceID = "service_f8ct1zt";
-    const templateID = "template_d8rrgyt";
-    const publicKey = "kWDeHBJrboAs0a7HC";
+    const serviceID = "service_f8ct1zt"; // Replace with your EmailJS service ID
+    const templateID = "template_d8rrgyt"; // Replace with your EmailJS template ID
+    const publicKey = "kWDeHBJrboAs0a7HC"; // Replace with your EmailJS public key
+
+    const templateParams = {
+      name: formData.fullName, // Updated to match the EmailJS template placeholder
+      email: formData.email, // Ensure this matches the "Reply To" field in the template
+      message: formData.message,
+    };
 
     emailjs
-      .send(serviceID, templateID, formData, publicKey)
+      .send(serviceID, templateID, templateParams, publicKey)
       .then(
-        (response : any) => {
+        (response) => {
           console.log("SUCCESS!", response.status, response.text);
           alert("Thank you for reaching out! Your message has been sent successfully.");
           setFormData({ fullName: "", email: "", message: "" });
         },
-        (error : any) => {
+        (error) => {
           console.error("FAILED...", error);
           alert("Oops! Something went wrong. Please try again later.");
         }
