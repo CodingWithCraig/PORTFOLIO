@@ -66,9 +66,17 @@ const ProjectsSection: React.FC = () => {
       title: 'CareerLaunch Africa',
       description: 'AI-powered career guidance platform.',
       screenshotUrl: careerlaunchScreenshot, // Updated to use imported asset
-      status: 'upcoming',
-      releaseDate: new Date(Date.now() + 100 * 24 * 60 * 60 * 1000), // 100 days
+      liveUrl: 'https://careerlauch.net',
+      status: 'published',
     },
+    // {
+    //   id: 4,
+    //   title: 'CareerLaunch Africa',
+    //   description: 'AI-powered career guidance platform.',
+    //   screenshotUrl: careerlaunchScreenshot, // Updated to use imported asset
+    //   status: 'upcoming',
+    //   releaseDate: new Date(Date.now() + 100 * 24 * 60 * 60 * 1000), // 100 days
+    // },
     // {
     //   id: 4,
     //   title: 'Blockchain Certificate Vault',
