@@ -4,6 +4,7 @@ import '../componentStyles/ProjectsSection.css';
 import engfindScreenshot from '../assets/Projects/engfind.png';
 import chatbotScreenshot from '../assets/Projects/chatbot.png';
 import careerlaunchScreenshot from '../assets/Projects/cla.png';
+import codetubeScreenshot from '../assets/Projects/codetube.png';
 import '../PageStyles/home.css'; 
 
 
@@ -69,10 +70,18 @@ const ProjectsSection: React.FC = () => {
       liveUrl: 'https://careerlauch.net',
       status: 'published',
     },
+    {
+      id: 4,
+      title: 'CodeTube',
+      description: 'Developer Hub, where developers can share knowledge and collaborate.',
+      screenshotUrl: codetubeScreenshot, // Updated to use imported asset
+      status: 'published',
+      liveUrl: 'https://code-tube-9rim.vercel.app/',
+    },
     // {
     //   id: 4,
-    //   title: 'CareerLaunch Africa',
-    //   description: 'AI-powered career guidance platform.',
+    //   title: 'CodeTube',
+    //   description: 'Developer Hub, where developers can share knowledge and collaborate.',
     //   screenshotUrl: careerlaunchScreenshot, // Updated to use imported asset
     //   status: 'upcoming',
     //   releaseDate: new Date(Date.now() + 100 * 24 * 60 * 60 * 1000), // 100 days
