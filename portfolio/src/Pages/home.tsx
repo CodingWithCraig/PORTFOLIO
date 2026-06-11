@@ -222,7 +222,7 @@ export default function Home() {
             collaborator with excellent problem-solving 
             abilities, committed to delivering high-quality
             software solutions that create real impact. <br />
-            <a href="#" className="cvDownloadBtn">View CV</a>
+            <a href="https://drive.google.com/uc?export=download&id=1LslCb-GRiGBVk9OM1VdXt8wAKcKtA3Wx" target="_blank" rel="noopener noreferrer" className="cvDownloadBtn">Download CV</a>
           </p>
 
           <div className="softSkills">
