@@ -17,6 +17,8 @@ import { FaNodeJs } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
 import { SiFirebase } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { MdStorage } from "react-icons/md";
 import { MdDesignServices } from "react-icons/md";
 import { FaReadme } from "react-icons/fa";
 import { IoGameController } from "react-icons/io5";
@@ -181,6 +183,18 @@ export default function Home() {
                 <div>
                   <SiMysql size={45} color="white" />
                   <p>MySQL</p>
+                </div>
+              </li>
+              <li className="skill-item">
+                <div>
+                  <SiPostgresql size={45} color="white" />
+                  <p>PostgreSQL</p>
+                </div>
+              </li>
+              <li className="skill-item">
+                <div>
+                  <MdStorage size={45} color="white" />
+                  <p>PgAdmin</p>
                 </div>
               </li>
             </ul>
