@@ -9,7 +9,7 @@
     align-items: center;
     width: 100%;
     padding: 8px 20px;         /* better spacing */
-    background-color: rgba(80, 80, 80, 0.25);  /* MORE transparent – blur will show */
+    background-color: rgba(80, 80, 80, 0.938);  /* MORE transparent – blur will show */
     position: fixed;
     top: 0;
     left: 0;
