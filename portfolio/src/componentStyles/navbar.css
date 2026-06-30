@@ -57,10 +57,10 @@
 
 .PortNav2 {
     list-style: none;
-    display: none;            /* hidden by default, shown on mobile via JS toggle */
+    display: flex;            /* hidden by default, shown on mobile via JS toggle */
     flex-direction: column;
     position: fixed;
-    top: 60px;                /* below the mobiBar */
+    top: 40px;                /* below the mobiBar */
     left: 0;
     z-index: 999;             /* slightly below mobiBar */
     background-color: rgba(80, 80, 80, 0.3);  /* same transparency */
