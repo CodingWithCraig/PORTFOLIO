@@ -85,7 +85,7 @@ const ProjectsSection: React.FC = () => {
       description: 'Developer Hub, where developers can share knowledge and collaborate.',
       screenshotUrl: innerglitchScreenshot, // Updated to use imported asset
       status: 'published',
-      liveUrl: 'https://innerglitch-org.vercel.app/',
+      liveUrl: 'https://inner-glitch-org.vercel.app/',
     },
     // {
     //   id: 4,
