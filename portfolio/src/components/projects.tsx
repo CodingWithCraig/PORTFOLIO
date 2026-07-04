@@ -5,6 +5,7 @@ import engfindScreenshot from '../assets/Projects/engfind.png';
 import chatbotScreenshot from '../assets/Projects/chatbot.png';
 import careerlaunchScreenshot from '../assets/Projects/cla.png';
 import codetubeScreenshot from '../assets/Projects/codetube.png';
+import innerglitchScreenshot from '../assets/Projects/innerglitch-org.png';
 import '../PageStyles/home.css'; 
 
 
@@ -77,6 +78,14 @@ const ProjectsSection: React.FC = () => {
       screenshotUrl: codetubeScreenshot, // Updated to use imported asset
       status: 'published',
       liveUrl: 'https://code-tube-9rim.vercel.app/',
+    },
+    {
+      id: 5,
+      title: 'InnerGlitch-org',
+      description: 'Developer Hub, where developers can share knowledge and collaborate.',
+      screenshotUrl: innerglitchScreenshot, // Updated to use imported asset
+      status: 'published',
+      liveUrl: 'https://innerglitch-org.vercel.app/',
     },
     // {
     //   id: 4,
