@@ -24,46 +24,11 @@ import { FaReadme } from "react-icons/fa";
 import { IoGameController } from "react-icons/io5";
 import { MdModeOfTravel } from "react-icons/md";
 import ProjectsSection from "../components/projects";
-import { useState } from "react";
 import Footer from "../components/footer";
-import emailjs from "@emailjs/browser";
 
 
 export default function Home() {
-  const [formData, setFormData] = useState({ fullName: "", email: "", message: "" });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    const serviceID = "service_f8ct1zt"; // Replace with your EmailJS service ID
-    const templateID = "template_d8rrgyt"; // Replace with your EmailJS template ID
-    const publicKey = "kWDeHBJrboAs0a7HC"; // Replace with your EmailJS public key
-
-    const templateParams = {
-      name: formData.fullName, // Updated to match the EmailJS template placeholder
-      email: formData.email, // Ensure this matches the "Reply To" field in the template
-      message: formData.message,
-    };
-
-    emailjs
-      .send(serviceID, templateID, templateParams, publicKey)
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          alert("Thank you for reaching out! Your message has been sent successfully.");
-          setFormData({ fullName: "", email: "", message: "" });
-        },
-        (error) => {
-          console.error("FAILED...", error);
-          alert("Oops! Something went wrong. Please try again later.");
-        }
-      );
-  };
 
   return (
     <div>
@@ -255,43 +220,18 @@ export default function Home() {
       <div id="contact">
         <div className="contactContainer">
           <h2 className="contactTitle">Contact</h2>
-
-          <form className="contactForm" onSubmit={handleSubmit}>
-            <input
-              type="text"
-              name="fullName"
-              placeholder="Full name"
-              value={formData.fullName}
-              onChange={handleInputChange}
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email address"
-              value={formData.email}
-              onChange={handleInputChange}
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="Messages"
-              rows={4}
-              value={formData.message}
-              onChange={handleInputChange}
-              required
-            ></textarea>
-            <button type="submit" className="submitButton">Submit</button>
-          </form>
-
+            <h3 className="contactSubtitle">Get in touch with me!</h3>
           <div className="contactInfo">
-            <h3>Get in touch with me!</h3>
-            <p>Let's talk!</p>
+            <p>
+              Click on the links below to reach out to me <br />
+              Better means of communication will be available soon!
+            </p>
+              
             <ul>
-              <li><IoIosMail size={20} /> clkhlongwani2@gmail.com</li>
-              <li><FaPhone size={20} /> +27658328829</li>
-              <li><IoLogoLinkedin size={20} /> <a href="https://www.linkedin.com/in/craig-hlongwani-447920359" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-              <li><FaGithub size={20} /> <a href="https://github.com/CodingWithCraig" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><IoIosMail id="contactIcon" size={30} /> <a href="mailto:clkhlongwani2@gmail.com">clkhlongwani2@gmail.com</a></li>
+              <li><FaPhone id="contactIcon" size={27} /> <a href="tel:+27658328829">+27-65-832-8829</a></li>
+              <li><IoLogoLinkedin id="contactIcon" size={28} /> <a href="https://www.linkedin.com/in/craig-hlongwani-447920359" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><FaGithub id="contactIcon" size={28} /> <a href="https://github.com/CodingWithCraig" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
           </div>
         </div>

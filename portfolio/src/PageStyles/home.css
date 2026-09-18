@@ -204,7 +204,7 @@
 }
 .skillC {
     display: inline-block;
-    background-color: #1a1a2e;
+    background: linear-gradient(to right, #0f0c29 0%, #302b63 70%, #24243e 100%);
     width: 80%;
     border-radius: 25px;
     padding: 1.3rem;
@@ -321,10 +321,12 @@
     
 }
 .aboutList li {
-    background-color: #1a1a2e;
-    padding: 0.5rem 1rem;
+    background: linear-gradient(to right, #696969 0%, #9792df 70%, #ffffff79 100%);
+    padding: 0.6rem 1rem;
     border-radius: 8px;
-    color: white;
+    color: black;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.74);
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
@@ -396,15 +398,12 @@
 
 .contactContainer {
   max-width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 2rem;
   justify-content: space-between;
-  gap: 1rem;
   background-color: rgba(25, 25, 75, 0.781);
-  padding: 1rem;
   border-radius: 10px;
   box-shadow: 0px 2px 10px rgba(34, 0, 226, 0.479);
+
 }
 
 .contactTitle {
@@ -412,68 +411,49 @@
   font-weight: bold;
   color:  whitesmoke;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.74);
-  margin-bottom: 1.5rem;
   width: 100%;
   line-height: 1.2;
 }
 
-.contactForm {
-  flex: 1 1 45%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.contactSubtitle {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #646cff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.74);
+    margin-bottom: 1.5rem;
+    width: 100%;
+    line-height: 1.2;
 }
 
-.contactForm input,
-.contactForm textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  color: white;
-  background-color: #1a1a2e;
-}
 
-.contactForm button {
-  background-color: #646;
-  color: white;
-  border: none;
-  padding: 0.8rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contactForm button:hover {
-  background-color: #4a4aff;
-}
 
 .contactInfo {
   flex: 1 1 45%;
-  text-align: left;
-  background: rgb(173, 193, 230);
+  text-align: center;
+  background: linear-gradient(to right, #141414 0%, #282558 70%, #00083379 100%);
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.contactInfo h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #333;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.74);
-}
 
 .contactInfo p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #555;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    opacity: 0.8;
 }
+
+
+
+
 
 .contactInfo ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0;
 }
 
@@ -483,11 +463,21 @@
   gap: 0.5rem;
   margin-bottom: 0.8rem;
   font-size: 1rem;
-  color: #555;
+  justify-content: center;
+  text-align: center;
+  padding: 0.2rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  background: linear-gradient(270deg, white 0%, darkgray 50%, lightgray 100%)
+}
+#contactIcon {
+    color: #000000;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.74);
 }
 
 .contactInfo a {
-  color: #646cff;
+  color: #332f2f;
   text-decoration: none;
   transition: color 0.3s ease;
 }

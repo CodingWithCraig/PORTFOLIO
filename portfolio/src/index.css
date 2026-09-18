@@ -5,14 +5,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-
-  /* Add background image */
-  background-image: url('./code-bg2.jpg'); /* change to your image name */
-  background-size: cover;          /* ensures the image covers the whole area */
-  background-position: center;     /* keeps it centered */
-  background-repeat: no-repeat;    /* no tiling */
-
-  /* Optional fallback color in case image fails to load */
   background-color: #00002e;
   overflow-x: hidden;
   touch-action: pan-y;
