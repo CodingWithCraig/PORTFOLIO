@@ -54,7 +54,7 @@
     background: linear-gradient(
         to bottom,
         rgba(47, 153, 223, 0.568) 0%,
-        rgba(12, 50, 75, 0.267) 50%,
+        /* rgba(12, 50, 75, 0.267) 50%, */
         rgba(52, 152, 219, 0) 100%
     );
     position: fixed;
@@ -74,13 +74,11 @@
     top: 40px;                /* below the mobiBar */
     left: 0;
     z-index: 999;             /* slightly below mobiBar */
-    background-color: rgba(80, 80, 80, 0.3);  /* same transparency */
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(0, 22, 37, 0.945);  /* same transparency */
     padding: 15px 0;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: start;
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     animation: SlideDown 0.3s ease-in-out;
 }
@@ -98,7 +96,10 @@
 
 .PortNav2 li {
     padding: 0.5rem 1rem;
-    border-radius: 8px;
+    margin: 0.2rem 2px;
+    width: 95%;
+    background: linear-gradient(to right, black 0%, #1a1a1aa9 50%, #3333338f 100%);
+    border-radius: 3px;
     transition: background-color 0.3s ease;
 }
 

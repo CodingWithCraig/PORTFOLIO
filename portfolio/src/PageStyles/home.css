@@ -389,9 +389,9 @@
 }
 
 #contact {
-  background-color: #09005833;
+  /* background-color: #09005833; */
   color: #333;
-  padding: 4rem 2rem;
+  padding: 4rem 0rem;
   text-align: center;
   margin-top: 3rem;
 }
@@ -428,7 +428,6 @@
 
 
 .contactInfo {
-  flex: 1 1 45%;
   text-align: center;
   background: linear-gradient(to right, #141414 0%, #282558 70%, #00083379 100%);
   padding: 1.5rem;
@@ -497,16 +496,5 @@
   }
 }
 
-@media (max-width: 450px) {
-  .contactContainer {
-    flex-direction: column;
-    text-align: center;
-  }
-  .contactForm, .contactInfo {
-    flex: 1 1 100%;
-  }
-  .contactInfo {
-    text-align: center;
-  }
-}
+
 
