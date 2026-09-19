@@ -167,7 +167,7 @@ export default function Home() {
         </div>
       </div>
 
-      <hr />
+      {/* <hr /> */}
 
       <div id="about">
         <div className='aboutContainer'>
@@ -204,10 +204,10 @@ export default function Home() {
           <div className="interests">
             <h2>Interests</h2>
             <ul className="aboutList">
-              <li><MdDesignServices size={20} color="darkgray" /> Designing</li>
-              <li><FaReadme size={20} color="darkgray" /> Reading</li>
-              <li><IoGameController size={20} color="darkgray" /> Gaming</li>
-              <li><MdModeOfTravel size={20} color="darkgray" /> Traveling</li>
+              <li><MdDesignServices size={20} color="black" /> Designing</li>
+              <li><FaReadme size={20} color="black" /> Reading</li>
+              <li><IoGameController size={20} color="black" /> Gaming</li>
+              <li><MdModeOfTravel size={20} color="black" /> Traveling</li>
             </ul>
           </div>
         </div>

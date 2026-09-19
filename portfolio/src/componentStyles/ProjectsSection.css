@@ -45,7 +45,7 @@
 
 /* Card Styling */
 .project-card {
-  background-color:#334155;
+  background: linear-gradient(135deg, #8c9096 0%, #070707 100%);
   border-radius: 1.25rem;
   overflow: hidden;
   box-shadow: 1px 1px 5px rgba(190, 186, 186, 0.1);
